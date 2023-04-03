@@ -1,0 +1,39 @@
+/* mission-list.component.css */
+.mission-row {
+  background-color: skyblue;
+  margin-bottom: 10px;
+}
+
+.mission-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: skyblue;
+}
+
+.mission-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+
+.mission-image {
+  margin-right: 20px;
+}
+
+.mission-img {
+  width: 100px;
+  height: 100px;
+}
+
+.mission-info {
+  flex-grow: 1;
+}
+
+.mission-details {
+  width: 100%;
+}

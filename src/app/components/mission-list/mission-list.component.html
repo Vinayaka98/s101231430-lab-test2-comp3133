@@ -1,0 +1,18 @@
+<!-- mission-list.component.html -->
+<div *ngFor="let launch of launches" (click)="onSelect(launch)" class="mission-row">
+  <mat-card class="mission-card">
+    <div class="mission-content">
+      <div class="mission-image">
+        <img [src]="launch.links.mission_patch_small" alt="Mission patch" class="mission-img">
+      </div>
+      <div class="mission-info">
+        <h3 style="font-weight: bold">{{ launch.mission_name }}</h3>
+        <p style="color: grey">{{ launch.launch_year }}</p>
+      </div>
+    </div>
+    <div class="mission-details">
+      <p>{{ launch.details }}</p>
+    </div>
+  </mat-card>
+</div>
+<app-mission-details *ngIf="selectedLaunch" [launch]="selectedLaunch"></app-mission-details>
